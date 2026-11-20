@@ -1,0 +1,46 @@
+{
+  "name": "mcp-readiness-cli",
+  "version": "0.1.0",
+  "description": "CLI that scans an MCP server (HTTP or stdio), scores production readiness, reports tool-description token cost, and lists top fixes. The Pro fix step writes a lossless slimmer tools list.",
+  "type": "module",
+  "bin": {
+    "mcp-readiness-cli": "bin/mcp-readiness.js",
+    "mcp-readiness": "bin/mcp-readiness.js"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples/demo-stdio.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node bin/mcp-readiness.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "lint",
+    "tokens",
+    "ai-agents"
+  ],
+  "license": "MIT",
+  "author": "Omer Shacham",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Om3rr/mcp-readiness-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Om3rr/mcp-readiness-cli/issues"
+  },
+  "homepage": "https://github.com/Om3rr/mcp-readiness-cli#readme"
+}
