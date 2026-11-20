@@ -4,7 +4,7 @@
 // with Authorization: Bearer <key>.
 // If the API cannot be reached, the result is marked offline so the CLI can
 // skip --fix with a clear warning instead of failing the free scan.
-export const FAMILY_API = 'https://mcp-readiness.example.workers.dev'; // replace with the live scanner API at launch
+export const FAMILY_API = 'https://mcp-readiness.omer20sh.workers.dev'; // live scanner Worker (free workers.dev)
 export const PRO_PLANS = new Set(['pro', 'team', 'org']);
 export const KEY_RE = /^mrc_(live|test)_[0-9a-f]{40}$/;
 
